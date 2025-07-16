@@ -9,7 +9,7 @@ const menu = async (m, sock) => {
 
   if (cmd === "menu") {
     const start = new Date().getTime();
-    await m.React('🔥');
+    await m.React('💲);
     const end = new Date().getTime();
     const responseTime = ((end - start) / 1000).toFixed(2);
 
@@ -20,7 +20,7 @@ const menu = async (m, sock) => {
     const uptime = `${hours}h ${minutes}m ${seconds}s`;
 
     // Profile Picture Fallback
-    let profilePictureUrl = '';
+    let profilePictureUrl = 'https://files.catbox.moe/j3df56.jpg';
     try {
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), 1500);
